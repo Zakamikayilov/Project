@@ -1,0 +1,53 @@
+body{
+  height: 3000px;
+}
+
+.photo-container{
+  position: relative;
+  display: inline-block;
+}
+
+.hoodie{
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.sale-price{
+  background-color: black;
+  color: white;
+  position:absolute;
+  font-family: Arial;
+  top:5px;
+  right: 0;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.bottom-overlay{
+  position: absolute;
+  bottom:0;
+  right: 0;
+  left: 0;
+  height: 80px;
+  background-color:rgba(255, 255, 255, 0.8) ;
+  display:flex;
+  justify-content: center;
+  align-items: center ;  
+}
+
+.payment{
+  background-color: white;
+  color: black;
+  font-family: Arial;
+  font-size: 15px;
+  border-style: solid;
+  border-width: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}

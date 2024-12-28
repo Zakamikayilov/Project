@@ -1,0 +1,27 @@
+body{
+  height: 3000px;
+}
+
+.photo-container{
+  position: relative;
+  display: inline-block;
+}
+
+.hoodie{
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.sale-price{
+  background-color: black;
+  color: white;
+  position:absolute;
+  font-family: Arial;
+  top:5px;
+  right: 0;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}

@@ -1,0 +1,56 @@
+
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 40px;
+
+
+}
+
+.profile{
+  width: 100%;
+  height: 100px;
+
+}
+
+.profile-pic{
+  width: 100%;
+  height: 225px;
+}
+
+.add-friend-button{
+  background-color: rgb(7, 136, 234);
+  color:white;
+  width: 100px;
+  height: 40px;
+  border-radius: 6px;
+  border:none
+}
+
+.mutual-friends-pic{
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.mutual-friends{
+  width :200px;
+  color: rgba(19, 19, 19, 0.484);
+  
+}
+
+.name{
+   font-weight:bold;
+   font-style:unset;
+
+}
+
+.mutual-friends-row{
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  grid-template-rows: 30px 1fr;
+  row-gap: 30px;
+  
+}
