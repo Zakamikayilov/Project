@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube.com Clone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/video.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg" />
+        <img class="youtube-logo" src="icons/youtube-logo.svg" />
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search" />
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg" />
+          <div class="tooltip">Search</div>
+        </button>
+        <!-- Put position absolute inside position relative -->
+        <button class="voice-button">
+          <img class="voice-icon" src="icons/voice-search-icon.svg" />
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg" />
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-app-icon-container">
+          <img class="youtube-app-icon" src="icons/youtube-apps.svg" />
+          <div class="tooltip">Options</div>
+        </div>
+        
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg" />
+          <div class="notifications-count">3</div>
+          <div class="tooltip">Notifications</div>
+        </div>
+          <img class="my-channel-icon" src="channel-pic/my-channel.jpeg" />
+      </div>
+    </header>
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/left/home-icon.svg" />
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/left/explore-icon.svg" />
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/left/subscriptions.svg" />
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/left/originals.svg" />
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/left/youtube-music.svg" />
+        <div>Youtube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/left/library.svg" />
+        <div>Library</div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <div class="thumb-row">
+            <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank" class="video-title-link">
+            <img class="thumb" src="thumb/thumbnail-1.webp" />
+            </a>
+            <div class="video-time">14:20</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-pic-container">
+                <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank" class="video-title-link">
+                  <img class="profile-pic" src="channel-pic/channel-1.jpeg" />
+                  </a>
+                  <div class="channel-tooltip">
+                    <img class="channel-tooltip-pic" src="channel-pic/channel-1.jpeg">
+                    <div>
+                      <div class="channel-tooltip-name">
+                        Marques Brownlee
+                      </div>
+                      <div class="channel-tooltip-stats">
+                        15M subscribers
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              
+            </div>
+  
+  
+            <div class="video-info">
+              <p class="video-title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+              <p class="video-author">Marques Brownlee</p>
+              <p class="video-stats">3.4M views &#183; 6 months ago</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumb-row">
+            <a href="https://www.youtube.com/c/markiplier" target="_blank" class="video-title-link">
+            <img class="thumb" src="thumb/thumbnail-2.webp" />
+            </a>
+            <div class="video-time">8:22</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-pic-container">
+                <a href="https://www.youtube.com/c/markiplier" target="_blank" class="video-title-link">
+                  <img class="profile-pic" src="channel-pic/channel-2.jpeg" />
+                  </a>
+                  <div class="channel-tooltip">
+                    <img class="channel-tooltip-pic" src="channel-pic/channel-2.jpeg">
+                    <div>
+                      <div class="channel-tooltip-name">
+                        Markiplier
+                      </div>
+                      <div class="channel-tooltip-stats">
+                        17M subscribers
+                      </div>
+                    </div>
+                    
+                  </div>
+              </div>
+              
+            </div>
+            <div class="video-info">
+              <p class="video-title">Try Not To Laugh Challenge #9</p>
+              <p class="video-author">Markiplier</p>
+              <p class="video-stats">19M views &#183; 4 years ago</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumb-row">
+            <a href="https://www.youtube.com/watch?v=VYCOg-yglNM&ab_channel=EvgenyGrinko" target="_blank" class="video-title-link">
+            <img class="thumb" src="thumb/ever2.png" />
+            </a>
+            <div class="video-time">3:38</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-pic">
+              <div class="profile-pic-container">
+                <a href="https://www.youtube.com/watch?v=VYCOg-yglNM&ab_channel=EvgenyGrinko" target="_blank" class="video-title-link">
+                  <img class="profile-pic" src="channel-pic/Evgeny grinko.jpg" />
+                  </a>
+                  <div class="channel-tooltip">
+                    <img class="channel-tooltip-pic" src="channel-pic/Evgeny grinko.jpg">
+                    <div>
+                      <div class="channel-tooltip-name">
+                        Evgeny Grinko
+                      </div>
+                      <div class="channel-tooltip-stats">
+                        170M subscribers
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              
+            </div>
+            <div class="video-info">
+              <p class="video-title">Evgeny Grinko - Valse</p>
+              <p class="video-author">Evgeny Grinko</p>
+              <p class="video-stats">46M views &#183; 13 year ago</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumb-row">
+            <a href="https://www.youtube.com/watch?v=lWQ-s2X4m7w&ab_channel=EmreAn%C4%B1l" target="_blank" class="video-title-link">
+            <img class="thumb" src="thumb/can.jpg" />
+            </a>
+            <div class="video-time">2:48</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-pic">
+              <div class="profile-pic-container">
+                <a href="https://www.youtube.com/watch?v=lWQ-s2X4m7w&ab_channel=EmreAn%C4%B1l" target="_blank" class="video-title-link">
+                  <img class="profile-pic" src="channel-pic/channels4_profile.jpg" />
+                  </a>
+                  <div class="channel-tooltip">
+                    <img class="channel-tooltip-pic" src="channel-pic/channels4_profile.jpg">
+                    <div>
+                      <div class="channel-tooltip-name">
+                        Emre Anil
+                      </div>
+                      <div class="channel-tooltip-stats">
+                        325B subscribers
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Semicenk & Rast - Canin Sagolsun(Speed up)
+              </p>
+              <p class="video-author">Emre Anil</p>
+              <p class="video-stats">1.6M views &#183; 8 months ago</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumb-row">
+            <a href="https://www.youtube.com/watch?v=kBvL8nSvymA" target="_blank" class="video-title-link">
+            <img class="thumb" src="thumb/bertaraf.jpg" />
+            </a>
+            <div class="video-time">2:34</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-pic-container">
+                <a href="https://www.youtube.com/watch?v=kBvL8nSvymA" target="_blank" class="video-title-link">
+                  <img class="profile-pic" src="channel-pic/canbay.jpg" />
+                  </a>
+                  <div class="channel-tooltip">
+                    <img class="channel-tooltip-pic" src="channel-pic/canbay.jpg">
+                    <div>
+                      <div class="channel-tooltip-name">
+                        Canbay & Wolker
+                      </div>
+                      <div class="channel-tooltip-stats">
+                        7.9M subscribers
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Canbay & Wolker feat. Heijan & Muti - Bertaraf (Official Video)
+                #SIR
+              </p>
+              <p class="video-author">Canbay & Wolker</p>
+              <p class="video-stats">44M views &#183; 3 months ago</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumb-row">
+            <a href="https://www.youtube.com/watch?v=Sn8iH-AFAwI&ab_channel=Bar%C4%B1%C5%9FAkarsu-Topic"  class="video-title-link">
+            <img class="thumb" src="thumb/baris akars.jpg" />
+            </a>
+            <div class="video-time">4:08</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-pic-container">
+                <a href="https://www.youtube.com/watch?v=Sn8iH-AFAwI&ab_channel=Bar%C4%B1%C5%9FAkarsu-Topic"  class="video-title-link">
+                  <img class="profile-pic" src="channel-pic/bars akrs.jpg" />
+                  </a>
+                  <div class="channel-tooltip">
+                    <img class="channel-tooltip-pic" src="channel-pic/bars akrs.jpg">
+                    <div>
+                      <div class="channel-tooltip-name">
+                        Baris Akarsu
+                      </div>
+                      <div class="channel-tooltip-stats">
+                        34M subscribers
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              
+            </div>
+            <div class="video-info">
+              <p class="video-title">Bir Sevmek Bin Defa Olmek Demekmis</p>
+              <p class="video-author">Baris Akarsu</p>
+              <p class="video-stats">40M views &#183; 5 years ago</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumb-row">
+            <a href="https://www.youtube.com/watch?v=S_zqwI2x4pc&ab_channel=RePlay"  class="video-title-link">
+            <img class="thumb" src="thumb/maxresdefault.jpg" />
+            </a>
+            <div class="video-time">3:11</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-pic">
+              <div class="profile-pic-container">
+                <a href="https://www.youtube.com/watch?v=S_zqwI2x4pc&ab_channel=RePlay"  class="video-title-link">
+                  <img class="profile-pic" src="channel-pic/Re play.jpg" />
+                  </a>
+                  <div class="channel-tooltip">
+                    <img class="channel-tooltip-pic" src="channel-pic/Re play.jpg">
+                    <div>
+                      <div class="channel-tooltip-name">
+                        Re Play
+                      </div>
+                      <div class="channel-tooltip-stats">
+                        1.1M subscribers
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Miro - Tecili Yardim (Prod by. SarkhanBeats)
+              </p>
+              <p class="video-author">Re Play</p>
+              <p class="video-stats">10M views &#183; 2 years ago</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumb-row">
+            <a href="https://www.youtube.com/watch?v=FVY4be1yFFY&ab_channel=MangaVEVO"  class="video-title-link">
+            <img class="thumb" src="thumb/mqdefault.jpg" />
+            </a>
+            <div class="video-time">5:20</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-pic-container">
+                <a href="https://www.youtube.com/watch?v=FVY4be1yFFY&ab_channel=MangaVEVO"  class="video-title-link">
+                  <img class="profile-pic" src="channel-pic/maNga.jpg" />
+                  </a>
+                  <div class="channel-tooltip">
+                    <img class="channel-tooltip-pic" src="channel-pic/maNga.jpg">
+                    <div>
+                      <div class="channel-tooltip-name">
+                        maNga
+                      </div>
+                      <div class="channel-tooltip-stats">
+                        19.2M subscribers
+                      </div>
+                    </div>
+                  </div>
+              </div>
+             
+            </div>
+            <div class="video-info">
+              <p class="video-title">maNga - Dursun Zaman</p>
+              <p class="video-author">maNga</p>
+              <p class="video-stats">82M views &#183; 14 years ago</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumb-row">
+            <a href="https://www.youtube.com/watch?v=TWYMQGH41V4&ab_channel=AhmedMustafayev"  class="video-title-link">
+            <img class="thumb" src="thumb/maxresdefault (1).jpg" />
+            </a>
+            <div class="video-time">4:24</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-pic-container">
+                <a href="https://www.youtube.com/watch?v=TWYMQGH41V4&ab_channel=AhmedMustafayev"  class="video-title-link">
+                  <img class="profile-pic" src="channel-pic/AhmedMust.jpg" />
+                  </a>
+                  <div class="channel-tooltip">
+                    <img class="channel-tooltip-pic" src="channel-pic/AhmedMust.jpg">
+                    <div>
+                      <div class="channel-tooltip-name">
+                        Ahmed Mustafayev
+                      </div>
+                      <div class="channel-tooltip-stats">
+                        2.2M subscribers
+                      </div>
+                    </div>
+                  </div>
+              </div>
+             
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Ahmed Mustafayev - Sevdiyim Xanim (Official Music Video) | 2018
+              </p>
+              <p class="video-author">Ahmed Mustafayev</p>
+              <p class="video-stats">7.5M views &#183; 5 year ago</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="video-preview">
+          <div class="thumb-row">
+            <a href="https://www.youtube.com/watch?v=7Cav3V5Mbr0&ab_channel=M%C9%99tan%C9%99t%C4%B0sg%C9%99nd%C9%99rli" class="video-title-link">
+              <img class="thumb" src="thumb/Metanet.jpg" />
+            </a>
+            <div class="video-time">4:49</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-pic-container">
+                <a href="https://www.youtube.com/watch?v=7Cav3V5Mbr0&ab_channel=M%C9%99tan%C9%99t%C4%B0sg%C9%99nd%C9%99rli" class="video-title-link">
+                  <img class="profile-pic" src="channel-pic/Metos.jpg" />
+                </a>
+                <div class="channel-tooltip">
+                  <img class="channel-tooltip-pic" src="channel-pic/Metos.jpg">
+                <div>
+                  <div class="channel-tooltip-name">
+                    Metanet Isgenderli
+                  </div>
+                  <div class="channel-tooltip-stats">
+                    74K subscribers
+                  </div>
+                </div>
+               
+              </div>
+              </div>
+            </div>
+
+
+              <div class="video-info">
+                <p class="video-title">
+                  Metanet Isgenderli - Solma Gulum
+                </p>
+                <p class="video-author">Metanet Isgenderli</p>
+                <p class="video-stats">3.7M views &#183; 5 years ago</p>
+              </div>
+            
+          </div>
+
+        </div>
+
+
+        <div class="video-preview">
+          <div class="thumb-row">
+            <a href="https://www.youtube.com/watch?v=HLaVNrwDXis&ab_channel=AhmetKaya" class="video-title-link">
+              <img class="thumb" src="thumb/AhmetKaya.jpg" />
+            </a>
+            <div class="video-time">5:22</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-pic-container">
+                <a href="https://www.youtube.com/watch?v=HLaVNrwDXis&ab_channel=AhmetKaya" class="video-title-link">
+                  <img class="profile-pic" src="channel-pic/Ahmetkaay.jpg" />
+                </a>
+                <div class="channel-tooltip">
+                  <img class="channel-tooltip-pic" src="channel-pic/Ahmetkaay.jpg">
+                <div>
+                  <div class="channel-tooltip-name">
+                    Ahmet Kaya
+                  </div>
+                  <div class="channel-tooltip-stats">
+                    2.36M subscribers
+                  </div>
+                </div>
+               
+              </div>
+              </div>
+            </div>
+
+
+              <div class="video-info">
+                <p class="video-title">
+                  Yakamoz (Ahmet Kaya)
+                </p>
+                <p class="video-author">Ahmet Kaya</p>
+                <p class="video-stats">1.3M views &#183; 10 years ago</p>
+              </div>
+            
+          </div>
+
+        </div>
+
+
+
+        <div class="video-preview">
+          <div class="thumb-row">
+            <a href="https://www.youtube.com/watch?v=ztQLk7B-bTU&ab_channel=CiemnaStrefa" class="video-title-link">
+              <img class="thumb" src="thumb/Bonus.jpg" />
+            </a>
+            <div class="video-time">5:22</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-pic-container">
+                <a href="https://www.youtube.com/watch?v=ztQLk7B-bTU&ab_channel=CiemnaStrefa" class="video-title-link">
+                  <img class="profile-pic" src="channel-pic/CiemnaStrefa.jpg" />
+                </a>
+                <div class="channel-tooltip">
+                  <img class="channel-tooltip-pic" src="channel-pic/CiemnaStrefa.jpg">
+                <div>
+                  <div class="channel-tooltip-name">
+                    CiemnaStrefa
+                  </div>
+                  <div class="channel-tooltip-stats">
+                    907K subscribers
+                  </div>
+                </div>
+               
+              </div>
+              </div>
+            </div>
+
+
+              <div class="video-info">
+                <p class="video-title">
+                  BONUS RPK - SERCE POLSKI (Official Video)
+                </p>
+                <p class="video-author">CiemnaStrefa</p>
+                <p class="video-stats">10M views &#183; 11 years ago</p>
+              </div>
+            
+          </div>
+
+        </div>
+        
+      </section>
+    </main>
+    
+  </body>
+</html>
